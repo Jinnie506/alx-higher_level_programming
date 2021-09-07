@@ -6,9 +6,9 @@ if number < 0:
 else:
     rem = number % 10
 if rem > 5:
-    print("Last digit of {:d} is {:d} and is greater than five"
+    print("Last digit of {:d} is {:d} and is greater than 5"
           .format(number, rem))
-elif rem is 0:
+elif rem == 0:
     print("Last digit of {} is {} and is zero".format(number, rem))
 else:
     print("Last digit of {} is {} and is less than 6 and not 0"
