@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 import sys
-'''
-    column first element, row second element
-'''
+"""
+nqueens backtracking program to print the coordinates of n queens
+on an nxn grid such that they are all in non-attacking positions
+"""
+
 def reject(board):
-    '''
-    column first element, row second element
-    '''
+    """recursive backtracking function to find the solution"""
     for col_A in board:
         for col_B in board:
             if not col_A is col_B:
